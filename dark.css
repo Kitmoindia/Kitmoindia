@@ -1,0 +1,54 @@
+.dark-mode-toggle {
+    position: flex;
+    
+}
+
+.dark-mode-toggle input {
+    display: none;
+}
+
+.dark-mode-toggle label {
+    display: block;
+    width: 30px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode-toggle label:after {
+    content: '';
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle input:checked + label {
+    background-color: #4CAF50;
+}
+
+.dark-mode-toggle input:checked + label:after {
+    transform: translateX(15px);
+}
+.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+.mode_line{
+    margin-left: 6px;
+    display: flex;
+    justify-content: center;
+}
+.dark_a{
+    color: #fff;
+}
+.dark_l{
+    background-color: #000;
+}

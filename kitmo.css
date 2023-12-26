@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+    padding: 0;
+}
+body{
+    
+}
+/*navbar*/
+.navbar{
+    height: 60px;
+    background-color:#BBCBCB;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+.nav-option{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kitmo-logo{
+    display: flex;
+    height: 100Px;
+    width: 150px;
+    justify-content: center;
+}
+.kitmo_img{
+    justify-content: center;
+}
+.search-secation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-select{
+    display: flex;
+    height: 40px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+.search-input{
+    background-color: transparent;
+    width: 400px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+.search-icon{
+    background-color: #B59391;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.cart{
+    position: relative;
+    font-size: 25px;
+    padding-top: 12px;
+    border-radius: 4px;
+    
+}
+.amuntcart{
+    background-color: red;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    top: -10px;
+    right: 6px;
+    padding: 1px 3px 2px 3px;
+    border-radius: 3px;
+}
+.usar{
+    font-size: 25px;
+}
+    /* border style */
+.border{
+    border:2px solid transparent;
+}
+.border:hover{
+    border:2px solid white;
+}
+.search_secation_panl{
+    display: none;
+    background-color:#BBCBCB;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.colam{
+    height: 13px;
+    background-color: #BBCBCB;
+    position: relative;
+}
+/* website postar dile and offer*/
+.hero_box{
+    top: -13px;
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    position: relative;
+}
+.hero-msg{
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+}
+.hero-msg a{
+    color: #007185;
+}
+.colam_cantenr{
+    height: 13px;
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+    top: -26px;
+    display: flex;
+    position: relative;
+    background-color: #FFF;
+}
+/* product item box cantenr*/
+.cantenr{
+    display: grid;
+    grid-template-columns: repeat(4, 185px);
+    gap: 10px;
+    justify-content: center;
+}
+.box{
+    height: 380px;
+    background-color:#BBCBCB;
+    border-radius: 10px;
+}
+.itam_name{
+    background-color: #BBCBCB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    border-radius: 10px;
+    text-shadow: 0 0 4px black;
+    
+}
+.itam_img{
+    height: 245px;
+    background-color: #9100FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-size: cover;
+}
+.itam_detelas{
+    height: 45Px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.itam_price{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    text-shadow: 2px 2px 5px black;
+}
+.desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-shadow: 0 0 4px black;
+    
+}
+.shop_box{
+    background-color: #BBCBCB;
+    height: 45Px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.add_cart{
+    background-color: #9DACFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 5px;
+    width: 35%;
+    margin-left: 10px;
+    font-size: 13px;
+}
+.buy{
+    
+    background-color: #9DACFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    border-radius: 10px;
+    margin: 5px;
+    margin-right: 10px;
+}
+/* design touch */
+.tuch:hover{
+    background-color: #FF0070;
+}
+.light_color{
+    
+}
+
+.light_color:hover{
+    box-shadow: 0 0 5px black;
+}
+.white_color{
+    
+}
+.white_color:hover{
+    box-shadow: 0 0 10px red;
+}
+/* different screen size */
+@media (max-width: 500px){
+    .cantenr{
+        grid-template-columns: repeat(2, 185px);
+    }
+    .hero_box{
+        height: 200px;
+    }
+    .navbar{
+        height: 50px;
+    }
+    .search-secation{
+        display: none;
+    }
+    .search_secation_panl{
+        display: flex
+    }
+    .search-select{
+        height: 35px;
+    }
+    .search-input{
+        width: 200px;
+        height: 35px;
+    }
+    .search-icon{
+        height: 35px;
+    }
+    
+}
+/* developer contact and website details */
+.contacts_line{
+    height: 14px;
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    display: flex;
+    position: relative;
+    background-color: white;
+    bottom: -13;
+    z-index: 1;
+}
+.contacts_second_line{
+    height: 13px;
+    display: flex;
+    background-color: #BBCBCB;
+    z-index: 0;
+}
+.cantacts{
+    display: flex;
+    background-color: #BBCBCB;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.contacts_bottom_line{
+    height: 14px;
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+    display: flex;
+    position: relative;
+    background-color: white;
+    top: -13;
+    z-index: 1;
+}
+.contacts_box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.profile_img{
+    height: 150px;
+    width: 150px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-size: cover;
+    border: 2px solid black;
+    box-shadow: 0 0 8px #D838EB;
+}
+.midea{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+    width: 65%;
+    font-size: 45;
+    
+}
+.contacts_box_mobile{
+    display: none;
+    justify-content: center;
+    margin-top: 10px;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+}
+.midea_mobile{
+    margin-top: 25px;
+    display: none;
+    justify-content: space-evenly;
+    font-size: 37px;
+}
+.fecebook{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: 70px;
+}
+.Instagram{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: 70px;
+}
+.LinkedIn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: 70px;
+}
+.fecebook_m{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: 70px;
+}
+.Instagram_m{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: 70px;
+}
+.LinkedIn_m{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: 70px;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+}
+@media (max-width: 500px){
+    .contacts_box{
+        display: none;
+    }
+    .contacts_box_mobile{
+        display: flex;
+    }
+    .midea_mobile{
+        display: flex;
+    }
+}
